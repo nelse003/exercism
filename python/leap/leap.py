@@ -1,6 +1,15 @@
 def is_leap_year(year):
-    if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
-        return True
-    else:
-        return False
+    """ Determine whether a year is a leap year.
+    
+    Parameters
+    -----------
+    year: int
+    
+    Returns
+    ----------
+    bool
+        True if year is a leap year, False otherwise
+    
+    """
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
 
